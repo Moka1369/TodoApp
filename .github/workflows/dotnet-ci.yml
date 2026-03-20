@@ -53,4 +53,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: moka1369/todoapp:latest
+          tags: moka1990/todoapp:latest
