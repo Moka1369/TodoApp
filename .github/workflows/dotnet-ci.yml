@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-test-publish:
+  build-test-publish-docker:
     runs-on: ubuntu-latest
 
     steps:
@@ -36,3 +36,6 @@ jobs:
         with:
           name: todoapp-publish
           path: ./publish
+
+      - name: Build Docker image
+        run: docker build -t todoapp:latest .
